@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/chrisjay358/Clipboard-landing-page.git]
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://clipboard-landing-pagey.netlify.app]
 
 ## My process
 
