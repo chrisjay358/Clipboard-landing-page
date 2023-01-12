@@ -1,0 +1,275 @@
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: var(--grayish-blue);
+}
+
+/**************************/
+/* GENERAL REUSABLE COMPONENTS */
+/**************************/
+
+.container {
+  max-width: 120rem;
+  margin-inline: auto;
+  padding: 0 3rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 1.4rem 3.2rem;
+  border-radius: 100px;
+  font-family: inherit;
+}
+
+.btn--green:link,
+.btn--green:visited {
+  background: var(--strong-cyan);
+  margin-right: 2rem;
+  box-shadow: 0 1.4rem 2.8rem hsla(171, 66%, 44%, 0.439);
+}
+
+.btn--blue:link,
+.btn--blue:visited {
+  background: var(--light-blue);
+  box-shadow: 0 1.4rem 2.8rem hsla(233, 100%, 69%, 0.433);
+}
+
+.btn--green:hover,
+.btn--green:active {
+  box-shadow: 0 0.4rem 0.8rem hsla(171, 66%, 44%, 0.435);
+}
+
+.btn--blue:hover,
+.btn--blue:active {
+  box-shadow: 0 0.4rem 0.8rem hsla(233, 100%, 69%, 0.4);
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--1x2 {
+  grid-template-columns: 50% 1fr;
+}
+
+.grid--1x3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 600;
+  color: var(--dark-grayish-blue);
+}
+
+.heading-primary {
+  font-size: 3.9rem;
+  margin-bottom: 2rem;
+}
+
+.heading-secondary {
+  margin-bottom: 2rem;
+}
+
+.heading-tertiary {
+  margin-bottom: 1.2rem;
+}
+
+.text-center {
+  text-align: center;
+  max-width: 65ch;
+  margin: 0 auto 7rem;
+}
+
+/**************************/
+/* HERO SECTION */
+/**************************/
+.section-hero {
+  background: url(/images/bg-header-desktop.png) no-repeat;
+  background-position: 50% -60px;
+  background-size: cover;
+  padding: 9.6rem 0 4.8rem;
+}
+
+.hero {
+  padding: 0 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-logo-box {
+  margin-bottom: 3.2rem;
+}
+
+.hero-text-box {
+  text-align: center;
+  /* max-width: 50%; */
+}
+
+.hero-description {
+  max-width: 55ch;
+  margin-bottom: 4.8rem;
+}
+
+/**************************/
+/* TRACK SECTION */
+/**************************/
+
+.section-track {
+  padding: 9.6rem 0 4.8rem;
+}
+
+picture {
+  justify-self: end;
+  width: auto;
+}
+
+.functions {
+  margin-block: 7rem;
+  max-width: 34ch;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.function-description {
+  line-height: 1.6;
+}
+
+/**************************/
+/* ACCESS SECTION */
+/**************************/
+
+.section-access {
+  padding: 9.6rem 0 4.8rem;
+}
+
+.access-img {
+  display: flex;
+  justify-content: center;
+}
+
+/**************************/
+/* WORKFLOW SECTION */
+/**************************/
+.section-workflow {
+  padding: 9.6rem 0 4.8rem;
+}
+
+.features {
+  text-align: center;
+}
+
+.feature-icon {
+  margin-bottom: 3.2rem;
+  height: 4rem;
+}
+
+.feature-title {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--dark-grayish-blue);
+  margin-bottom: 1.6rem;
+}
+
+/**************************/
+/* FEATURED IN SECTION */
+/**************************/
+.section-featured {
+  padding: 5.6rem 0 4.8rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/**************************/
+/* DOWNLOAD SECTION */
+/**************************/
+.section-download {
+  padding: 9.6rem 0 4.8rem;
+}
+
+.download-content {
+  margin-bottom: 4.8rem;
+}
+
+/**************************/
+/* FOOTER */
+/**************************/
+.footer {
+  padding: 6.8rem 0;
+  background: hsl(220, 20%, 97%);
+}
+
+.grid--footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+}
+
+.logo-icon {
+  height: 80px;
+  width: 80px;
+}
+
+.nav-col:last-child {
+  align-self: center;
+  justify-self: end;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active,
+.social-icons {
+  color: var(--strong-cyan);
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  color: var(--dark-grayish-blue);
+}
